@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* One calm accent colour (deep teal) plus neutral ink and paper. */
+  --color-accent: #0f766e;
+  --color-accent-hover: #115e59;
+  --color-accent-soft: #e6f4f2;
+  --color-ink: #1f2933;
+  --color-muted: #5f6b76;
+  --color-line: #e5e7eb;
+  --color-paper: #fafaf8;
+
+  /* Urgency colours, used only as small markers. */
+  --color-urgent-high: #c2410c;
+  --color-urgent-high-soft: #fff1e8;
+  --color-urgent-medium: #b45309;
+  --color-urgent-medium-soft: #fef6e4;
+  --color-urgent-low: #64748b;
+  --color-urgent-low-soft: #f1f5f9;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
